@@ -9,7 +9,7 @@
     overflow-x: hidden;
 }
 header{
-    width: 100%;
+    max-width: 100vw;
     height: 15vh;
     box-shadow: 0 0 10px gray;
     display: flex;
@@ -20,6 +20,9 @@ header{
     width: 40%;
     display: flex;
     align-items: center;
+}
+.header--logo img{
+    width: 13vw;
 }
 .header--nav{
     width: 25%;
@@ -78,24 +81,45 @@ main{
     justify-content: flex-end;
 }
 .main--intro_img img{
+    height: 53vh;
     margin: 10vh 3vw 0 0;
 }
 .main--intro_links{
     margin-top: 5vh;
 }
 .main--intro_links img{
+    width: 1.8vw;
+    height: 4vh;
     margin-right: 0.7vw;
     cursor: pointer;
 }
 .main--background_left{
+    height: 100%;
     position: absolute;
     top: 32vh;
     right: 71vw;
-    z-index: -2;
+    z-index: -999;
 }
 .main--background_right{
+    height: 100%;
     position: absolute;
     top: 13vh;
     left: 70vw;
     z-index: -3;
+}
+.footer--scroll{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer--scroll p{
+    color: #242424;
+    font-size: 1.3vw;
+    font-weight: 600;
+    margin-bottom: 2vh;
+}
+.footer--scroll img{
+    cursor: pointer;
 }
